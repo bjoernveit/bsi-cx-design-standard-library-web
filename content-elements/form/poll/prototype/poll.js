@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('formPoll', () => ({
+export default () => ({
   root: null,
   labelElement: null,
   requiredErrorElement: null,
@@ -117,4 +115,4 @@ Alpine.data('formPoll', () => ({
     }
   },
 
-}))
+})

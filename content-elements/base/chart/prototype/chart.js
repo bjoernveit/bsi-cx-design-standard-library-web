@@ -1,13 +1,12 @@
 import { ChartConfig, ChartUrlProvider } from '@bsi-cx/chart';
 import ChartConfigColor from '@bsi-cx/chart/src/config/color';
-import Alpine from '@alpinejs/csp';
 import 'chart.js/auto';
 
 /**
  * @type {{border: ChartConfigColor, background: ChartConfigColor}[]}
  */
 
-Alpine.data('chartElement', () => ({
+export default () => ({
   chart: null,
   config: null,
 
@@ -41,7 +40,7 @@ Alpine.data('chartElement', () => ({
       }
     });
   },
-}))
+})
 
 // @bsi-cx/chart requires us to keep thisglobal
 const colors = [];

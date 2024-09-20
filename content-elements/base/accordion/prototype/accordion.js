@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('accordionElement', () => ({
+export default () => ({
     root: null,
     accordionHeader: null,
 
@@ -22,4 +20,4 @@ Alpine.data('accordionElement', () => ({
             this.accordionHeader.setAttribute('aria-expanded', 'false');
         }
     },
-}));
+});

@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('newsSnippet', () => ({
+export default () => ({
 
   // Set href of button
   setButtonUrl() {
@@ -13,4 +11,4 @@ Alpine.data('newsSnippet', () => ({
       cardElement.getElementsByClassName("bsi-news-btn")[0].style.display = "none";
     }
   },
-}))
+})

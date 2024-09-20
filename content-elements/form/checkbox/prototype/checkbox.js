@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('checkbox', () => ({
+export default () => ({
   requiredErrorElement: null,
 
   initRequiredError() {
@@ -11,4 +9,4 @@ Alpine.data('checkbox', () => ({
     this.requiredErrorElement.style.display = (this.$el.checked || !this.$el.hasAttribute('required')) ? 'none' : 'block';
   },
 
-}))
+})

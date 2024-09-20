@@ -1,7 +1,6 @@
-import Alpine from '@alpinejs/csp';
 import { Tooltip } from 'bootstrap';
 
-Alpine.data('formElement', () => ({
+export default () => ({
   form: null,
   root: null,
 
@@ -121,4 +120,4 @@ Alpine.data('formElement', () => ({
       }
     }
   },
-}))
+})

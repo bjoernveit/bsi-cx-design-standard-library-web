@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('tableElement', () => ({
+export default () => ({
 
   // Set header text to td:before for reverse table on mobile screens
   setHeaderTableMobile() {
@@ -24,4 +22,4 @@ Alpine.data('tableElement', () => ({
       }
     }
   },
-}))
+})

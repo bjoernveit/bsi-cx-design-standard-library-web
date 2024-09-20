@@ -1,5 +1,4 @@
 
-import Alpine from '@alpinejs/csp';
 import Observable from "../src/utils/observable.js";
 import { initCalendar } from "../src/calendar.js";
 import { initSummary } from "../src/summary.js";
@@ -29,7 +28,7 @@ import { initDayView, initWeekView } from "../src/slot/slot.js";
  * @property {Observable<Slot|null>} selectedSlot
  */
 
-Alpine.data('slotFinder', () => ({
+export default () => ({
 
   /** @type {Model}  */
   model: {
@@ -60,4 +59,4 @@ Alpine.data('slotFinder', () => ({
   initSummary() { 
     initSummary(this.model, this.$el, this.$refs.bookButton);
   },
-}));
+});

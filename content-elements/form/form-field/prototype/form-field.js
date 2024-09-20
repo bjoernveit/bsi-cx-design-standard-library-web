@@ -1,10 +1,9 @@
-import Alpine from '@alpinejs/csp';
 import flatpickr from "flatpickr";
 import "flatpickr/dist/l10n/de.js";
 import "flatpickr/dist/l10n/fr.js";
 import "flatpickr/dist/l10n/it.js";
 
-Alpine.data('formField', () => ({
+export default () => ({
   rootEl: null,
   inputEl: null,
   fp: null,
@@ -214,4 +213,4 @@ Alpine.data('formField', () => ({
       });
     }
   },
-}))
+})

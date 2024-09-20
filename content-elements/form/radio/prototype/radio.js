@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('formRadio', () => ({
+export default () => ({
   root: null,
   requiredErrorElement: null,
 
@@ -25,4 +23,4 @@ Alpine.data('formRadio', () => ({
     }
   },
 
-}))
+})

@@ -1,8 +1,7 @@
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
-import Alpine from '@alpinejs/csp';
 
-Alpine.data('telInput', () => ({
+export default () => ({
   rootElement: null,
   inputField: null,
   normalizedValueField: null,
@@ -131,4 +130,4 @@ Alpine.data('telInput', () => ({
     this.labelText = this.labelElement.innerText;
     this.labelElement.innerText = this.inputField.placeholder;
   },
-}));
+});

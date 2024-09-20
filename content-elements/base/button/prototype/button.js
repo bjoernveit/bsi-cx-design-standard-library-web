@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('btnElement', () => ({
+export default () => ({
   root: null,
   btn: null,
   icon: null,
@@ -21,4 +19,4 @@ Alpine.data('btnElement', () => ({
       }
     }
   },
-}))
+})

@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('webcamImageUpload', () => ({
+export default () => ({
     isAsk: true,
     isCamera: false,
     isCaptureMode: true,
@@ -95,4 +93,4 @@ Alpine.data('webcamImageUpload', () => ({
         };
         xhr.send(data);
     }
-}))
+})

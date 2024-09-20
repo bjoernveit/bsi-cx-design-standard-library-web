@@ -1,6 +1,4 @@
-import Alpine from '@alpinejs/csp';
-
-Alpine.data('selectField', () => ({
+export default () => ({
   rootElement: null,
   selectElement: null,
 
@@ -18,4 +16,4 @@ Alpine.data('selectField', () => ({
       this.selectElement.value = this.selectElement.options[0].value;
     }
   },
-}))
+})
